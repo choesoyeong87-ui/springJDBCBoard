@@ -28,13 +28,13 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public int updateBoard(Board board) throws Exception {
         int count =boardDAO.updateBoard(board);
-        return 0;
+        return count;
     }
 
     @Override
     public int deleteBoard(Board board) throws Exception {
        int count = boardDAO.deleteBoard(board);
-        return 0;
+        return count;
     }
 
     @Override
@@ -46,7 +46,7 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public List<Board> boardSearch(Board board) throws Exception {
 		List<Board> boardList =boardDAO.boardSearch(board);
-		return null;
+		return boardList;
 	}
 
 }

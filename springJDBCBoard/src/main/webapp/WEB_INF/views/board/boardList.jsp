@@ -172,7 +172,7 @@
     <div class="container">
     <div class="header-box">
         <h1>BOARD <span>LIST</span></h1>
-        <a href="/board/boardlist" class="btn-write">새로고침</a>
+        <a href="/board/boardList" class="btn-write">새로고침</a>
         <a href="/board/insertForm" class="btn-write">게시판입력</a>
     </div>
 
