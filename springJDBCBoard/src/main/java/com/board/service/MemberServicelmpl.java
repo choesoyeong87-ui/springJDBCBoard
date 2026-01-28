@@ -26,8 +26,8 @@ public class MemberServicelmpl implements MemberService{
 
 	@Override
 	public List<Member> memberSearch(Member member) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		List<Member> memberList = memberDAO.memberSearch(member);
+		return memberList;
 	}
 
 	@Override

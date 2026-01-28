@@ -117,5 +117,17 @@ public class MemberController {
 		return "member/failed";
 	}
 	
+	@GetMapping("/search")
+	public String getMethodName(Member member , Model model) {
+		List<Member> memberList;
+		try {
+			memberList = memberService.memberSearch(member);
+			model.addAttribute("memberList",memberList);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "member/memberList";
+	}
+	
 	
 }
