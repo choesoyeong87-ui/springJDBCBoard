@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.board.dao.BoardDAO;
 import com.board.domain.Board;
@@ -14,6 +15,7 @@ public class BoardServiceImpl implements BoardService {
     private BoardDAO boardDAO;
 
     @Override
+    @Transactional
     public int insertBoard(Board board) throws Exception {
         int count = boardDAO.insertBoard(board);
         return count;

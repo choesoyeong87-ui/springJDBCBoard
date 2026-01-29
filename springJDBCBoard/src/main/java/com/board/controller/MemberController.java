@@ -44,6 +44,7 @@ public class MemberController {
 		model.addAttribute("message", "회원가입 실패");
 		return "member/failed";
 	}
+	
 	@GetMapping("/memberList")
 	public String memberList(Model model) {
 		log.info("memberList");
